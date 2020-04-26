@@ -56,7 +56,7 @@ class WikiDao(ElasticSearchDao):
 
     def createQueryToGetEntities(self, word: str):
         """
-        from a single word build a requests body to query against ES
+        build a requests body to query against ES
         @:param word: string
         @:return body: dict
         """
@@ -86,7 +86,7 @@ class WikiDao(ElasticSearchDao):
 
     def createBulkFixSingleWord(self, word: str):
         """
-        prepare mget query for bulk syntax - single word
+        prepare mget query for bulk syntax
         @:param word: string
         @:return mgetL: list
         """
@@ -97,7 +97,7 @@ class WikiDao(ElasticSearchDao):
 
     def bulkSearchOnES(self, body, list_of_words: list):
         """
-        query an array of words against ES to get outgoing links
+        query an array of words against ES
         @:param body: list
         @:param list_of_words: list
         @:return maxi_dict: dict
