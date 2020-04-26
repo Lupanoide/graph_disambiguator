@@ -95,7 +95,7 @@ class WikiDao(ElasticSearchDao):
         mgetL.append(self.createQueryToGetEntities(word))
         return mgetL
 
-    def bulkSearchOnES(self, body, list_of_words: list):
+    def bulkSearchOnES(self, body: dict, list_of_words: list):
         """
         query an array of words against ES
         @:param body: list
