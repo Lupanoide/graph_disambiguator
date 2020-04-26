@@ -1,0 +1,8 @@
+venv
+*.log
+__pycache__/
+*.py[cod]
+.git
+.idea
+knowledgebase/test
+.DS_Store

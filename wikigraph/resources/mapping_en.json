@@ -1,0 +1,32 @@
+{
+  "mappings": {
+    "properties": {
+      "category": {
+        "type": "text",
+        "analyzer": "english"
+      },
+      "incoming_links": {
+        "type": "long"
+      },
+      "outgoing_link": {
+        "type": "text",
+        "analyzer": "english"
+      },
+      "redirect": {
+        "properties": {
+          "namespace": {
+            "type": "long"
+          },
+          "title": {
+            "type": "text",
+            "analyzer": "english"
+          }
+        }
+      },
+      "title": {
+        "type": "text",
+        "analyzer": "english"
+      }
+    }
+  }
+}

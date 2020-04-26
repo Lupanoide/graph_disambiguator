@@ -1,0 +1,84 @@
+{
+  "settings": {
+    "analysis": {
+      "filter": {
+        "italian_elision": {
+          "type": "elision",
+          "articles": [
+            "c",
+            "l",
+            "all",
+            "dall",
+            "dell",
+            "nell",
+            "sull",
+            "coll",
+            "pell",
+            "gl",
+            "agl",
+            "dagl",
+            "degl",
+            "negl",
+            "sugl",
+            "un",
+            "m",
+            "t",
+            "s",
+            "v",
+            "d"
+          ],
+          "articles_case": true
+        },
+        "italian_stop": {
+          "type": "stop",
+          "stopwords": "_italian_"
+        },
+        "italian_stemmer": {
+          "type": "stemmer",
+          "language": "italian"
+        }
+      },
+      "analyzer": {
+        "rebuilt_italian": {
+          "tokenizer": "standard",
+          "filter": [
+            "italian_elision",
+            "lowercase",
+            "italian_stop",
+            "italian_stemmer"
+          ]
+        }
+      }
+    }
+  },
+  "mappings": {
+    "properties": {
+      "category": {
+        "type": "text",
+        "analyzer": "rebuilt_italian"
+      },
+      "incoming_links": {
+        "type": "long"
+      },
+      "outgoing_link": {
+        "type": "text",
+        "analyzer": "rebuilt_italian"
+      },
+      "redirect": {
+        "properties": {
+          "namespace": {
+            "type": "long"
+          },
+          "title": {
+            "type": "text",
+            "analyzer": "rebuilt_italian"
+          }
+        }
+      },
+      "title": {
+        "type": "text",
+        "analyzer": "rebuilt_italian"
+      }
+    }
+  }
+}

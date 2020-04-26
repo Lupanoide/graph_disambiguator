@@ -1,0 +1,13 @@
+[default]
+log_level = INFO
+log_file = ../../log.log
+
+[elasticsearch]
+cluster = http://localhost:9200
+indexname = wikigraph
+
+[neo4j]
+server = localhost:7687
+
+[wordList]
+stopword = ../resources/stopword-en.txt
