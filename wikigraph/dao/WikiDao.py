@@ -54,17 +54,6 @@ class WikiDao(ElasticSearchDao):
             boole = True
         return boole
 
-    def addOnEntitiesL(self, lista_entities: list, key: str):
-        """
-        populate lista_entities for response
-        @:param lista_entities: list
-        @:param key: string
-        @:return lista_entities: list
-        """
-        if not key in lista_entities:
-            lista_entities.append(key)
-        return lista_entities
-
     def createQueryToGetEntities(self, word: str):
         """
         from a single word build a requests body to query against ES
