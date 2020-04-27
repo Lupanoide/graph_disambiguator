@@ -21,7 +21,7 @@ if __name__ == '__main__':
     #===========================================================================
     #### English
     #splitted_phrase = "Apollo killed Python in Delphi".split()
-    #splitted_phrase = "I coded microservices in python for this app".split()
+    #splitted_phrase = "I coded python microservices for this app".split()
     splitted_phrase = "a python is eating a mouse".split()
 
 
