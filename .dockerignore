@@ -4,5 +4,5 @@ __pycache__/
 *.py[cod]
 .git
 .idea
-knowledgebase/test
+wikigraph/test
 .DS_Store
