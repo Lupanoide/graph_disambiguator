@@ -3,7 +3,7 @@ configparser==5.0.0
 elasticsearch==7.6.0
 flask==1.1.2
 itsdangerous==1.1.0
-Jinja2==2.11.2
+Jinja2==2.11.3
 MarkupSafe==1.1.1
 neo4j==1.7.6
 neobolt==1.7.17
